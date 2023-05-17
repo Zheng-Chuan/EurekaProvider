@@ -1,0 +1,11 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: provider-application
+eureka:
+  instance:
+    instance-id: provider-application
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
